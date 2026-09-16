@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #0f1117;
+  color: #e4e6eb;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  color: #9199a8;
+  font-size: 0.9rem;
+}
+
+.path-form {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.path-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #2a2e3a;
+  background: #1a1d27;
+  color: #e4e6eb;
+  font-size: 0.95rem;
+}
+
+.path-input:focus {
+  outline: 2px solid #5b8cff;
+}
+
+.btn-primary {
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  background: #5b8cff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #4a7aef;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-box {
+  background: #3a1f24;
+  border: 1px solid #8b2c3a;
+  color: #ff8f9a;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #1a1d27;
+  border: 1px solid #2a2e3a;
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.card-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #5b8cff;
+}
+
+.card-label {
+  font-size: 0.8rem;
+  color: #9199a8;
+}
+
+.table-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.table-section h2 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1d27;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #2a2e3a;
+  font-size: 0.9rem;
+}
+
+th {
+  background: #22252f;
+  color: #9199a8;
+  font-weight: 600;
+}
+
+tr.diff-easy td:first-child {
+  color: #4ade80;
+}
+
+tr.diff-medium td:first-child {
+  color: #fbbf24;
+}
+
+tr.diff-hard td:first-child {
+  color: #f87171;
+}

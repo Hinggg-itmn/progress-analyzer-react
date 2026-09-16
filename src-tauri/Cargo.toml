@@ -1,0 +1,12 @@
+[package]
+name = "progress-analyzer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+chrono = "0.4"
+
+[build-dependencies]
+tauri-build = { version = "2.6.3", features = [] }
