@@ -1,8 +1,11 @@
+mod db;
 mod parser;
 mod report;
 mod stats;
 
 use report::Report;
+use sqlx::PgPool;
+use tauri::Manager;
 
 #[tauri::command]
 fn analyze_notes(path: String) -> Result<Report, String> {
